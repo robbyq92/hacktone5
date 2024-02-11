@@ -79,3 +79,24 @@ Creamos ahora uno, para sacar un Pod de los Hello-Kuberentes:
 ![image](https://github.com/robbyq92/hacktone5/assets/49034238/04119423-d314-4326-ad1c-78e2310be1bd)
 
 
+## Alertas
+
+Se puede crear una alerta en Grafana
+![image](https://github.com/robbyq92/hacktone5/assets/49034238/61305080-d4a7-4f3c-900c-82fb9bb761fe)
+
+O bien en el AlertManager
+![image](https://github.com/robbyq92/hacktone5/assets/49034238/c9ac3734-901e-430f-b834-380d4d592cdb)
+
+Se ha configurado el prometheus para el scraper de Alertmanager y en el Alertmanager debe llegar las alertas.
+
+
+Se mata el pod el kubernetes
+```
+pod "hello-kubernetes-custom-message-5cd674d9f-phvh8" deleted
+```
+Se ve la alerta en grafana que ya no sale "Health"
+![image](https://github.com/robbyq92/hacktone5/assets/49034238/20e71229-0d04-472f-8b8b-83f8a1fd5436)
+![image](https://github.com/robbyq92/hacktone5/assets/49034238/69913a3d-8565-4f65-9b8a-044e3d98d471)
+
+
+
